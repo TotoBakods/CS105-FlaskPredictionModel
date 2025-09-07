@@ -1,10 +1,10 @@
-# 📊 Predictive Regression Models
+# Predictive Regression Models
 
 This repository contains a collection of **pre-trained machine learning regression models** built using **scikit-learn**. Each model is trained on a specific dataset and comes with the scaler used for preprocessing, making it easy to load and use for predictions.
 
 ---
 
-## 🚀 Models Overview
+## Models Overview
 
 This project includes three regression models:
 
@@ -19,7 +19,7 @@ This project includes three regression models:
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python **3.7+**
