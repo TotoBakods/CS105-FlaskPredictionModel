@@ -1,169 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
-:root {
-    --primary-color: #0052cc;
-    --primary-hover: #0041a3;
-    --background-color: #f4f7f9;
-    --card-background: #ffffff;
-    --text-color: #344054;
-    --heading-color: #101828;
-    --border-color: #e2e8f0;
-    --success-color: #12b76a;
-    --error-color: #f04438;
-}
-
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 40px 20px;
-}
-
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-header {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     text-align: center;
-    margin-bottom: 40px;
+    padding-top: 20px;
 }
 
-header h1 {
-    color: var(--heading-color);
-    font-size: 2.5rem;
-    font-weight: 700;
+h1, h2 {
+    color: #333;
 }
 
-header p {
-    font-size: 1.1rem;
-    color: #667085;
-}
-
-.card {
-    background-color: var(--card-background);
-    border-radius: 16px;
-    padding: 35px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.07);
-}
-
-.card h2 {
-    margin-top: 0;
-    color: var(--heading-color);
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-}
-
-.card p {
-    color: #667085;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #475467;
+/* Style for each predictor section */
+#salary-predictor, #income-predictor, #ad-predictor {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    width: 500px;
+    margin: 20px auto; /* Center the divs */
+    padding: 20px;
 }
 
 input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 1rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-input[type="number"]:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 200px; /* Fixed width */
 }
 
 button {
-    width: 100%;
-    padding: 14px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-    background-color: var(--primary-hover);
+    border: 1px solid #555;
+    background-color: #f1f1f1;
 }
 
 button:disabled {
-    background-color: #98a2b3;
     cursor: not-allowed;
+    background-color: #e0e0e0;
 }
 
-.result-box {
-    margin-top: 25px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9fafb;
-    min-height: 24px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.1rem;
+/* Simple classes for result text color */
+.success {
+    color: green;
 }
 
-.result-box .prediction-text.success {
-    color: var(--success-color);
-}
-
-.result-box .prediction-text.error {
-    color: var(--error-color);
-}
-
-/* Loader Styles */
-.loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid var(--primary-color);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    color: #667085;
+.error {
+    color: red;
 }

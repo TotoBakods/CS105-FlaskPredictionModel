@@ -22,7 +22,6 @@ try:
 
     rf_ad = RandomForestRegressor(random_state=42)
 
-    # Define the hyperparameters to tune
     param_grid_ad = {
         'n_estimators': [100, 200, 300],
         'max_features': ['sqrt', 'log2'],

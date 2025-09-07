@@ -26,13 +26,13 @@ except FileNotFoundError as e:
 
 @app.route('/')
 def home():
-    """Home route to confirm the API is running."""
+
     return "<h1>Multi-Model Prediction API is running with Improved Models</h1>"
 
 
 @app.route('/predict/salary', methods=['POST'])
 def predict_salary():
-    """Predicts salary based on years of experience."""
+
     try:
         data = request.get_json(force=True)
         experience_value = data['YearsExperience']
@@ -64,7 +64,7 @@ def predict_income():
 def predict_advertising():
     try:
         data = request.get_json(force=True)
-        # --- THIS LINE IS NOW CORRECTED ---
+
         features_df = pd.DataFrame([[data['TV'], data['Radio'], data['Newspaper']]],
                                    columns=['TV', 'Radio', 'Newspaper'])
         scaled_features = ad_scaler.transform(features_df)
