@@ -21,26 +21,26 @@ This project includes three regression models:
 
 ## ⚙️ Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
 - Python **3.7+**
-- Required libraries: `pandas`, `scikit-learn`, `joblib`
+- Required libraries: `pandas`, `scikit-learn`, `joblib` , `Flask`, `Flask-Cors`, `pandas`
 
-### 📥 Installation
+### Installation
 Clone this repository and install the dependencies:
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-name>
+git clone <[your-repository-url](https://github.com/TotoBakods/CS105-FlaskPredictionModel)>
+cd <CS105-FlaskPredictionModel>
 pip install pandas scikit-learn joblib
 ```
 
 ---
 
-## 📌 How to Use the Models
+## How to Use the Models
 
 Each model has its own `.joblib` file and a corresponding scaler. You can load them and make predictions easily.
 
-### 🔮 Example: Predicting Advertising Sales
+### Example: Predicting Advertising Sales
 
 ```python
 import joblib
@@ -73,7 +73,7 @@ print(f"\nPredicted Sales: {predicted_sales[0]:.2f}")
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -96,7 +96,7 @@ print(f"\nPredicted Sales: {predicted_sales[0]:.2f}")
 
 ---
 
-## 🏗️ Model Training
+## Model Training
 
 The models were trained using **RandomForestRegressor** from scikit-learn. Training steps included:
 
@@ -107,6 +107,4 @@ The models were trained using **RandomForestRegressor** from scikit-learn. Train
 
 ---
 
-## 📜 License
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
